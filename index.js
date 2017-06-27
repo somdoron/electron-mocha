@@ -60,7 +60,7 @@ app.on('ready', () => {
       height: 700,
       width: 1200,
       focusable: opts.debug,
-      webPreferences: { webSecurity: false }
+      webPreferences: { webSecurity: false, nodeIntegrationInWorker: true }
     })
 
     if (!opts.debug && process.platform === 'darwin') {
